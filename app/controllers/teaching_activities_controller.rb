@@ -2,6 +2,7 @@ class TeachingActivitiesController < ApplicationController
     before_action :find_tactivity, only: [:show, :edit, :update, :destroy]
     
     def index
+        @teaching_activities = TeachingActivity.all.order("created_at DESC")
     end
     
     def show

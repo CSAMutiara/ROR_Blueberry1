@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-    resources :teaching_activities
-    root 'teaching_activities#index'
+    resources :tactivities
+    root 'tactivities#index'
 end
