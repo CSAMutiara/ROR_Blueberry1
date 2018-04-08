@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2018-04-08 20:10:31
+  name: MyString
+  ta1: MyText
+  ta2: MyText
+  ta3: MyText
+  ta4: MyText
+  status: MyString
+
+two:
+  date: 2018-04-08 20:10:31
+  name: MyString
+  ta1: MyText
+  ta2: MyText
+  ta3: MyText
+  ta4: MyText
+  status: MyString
