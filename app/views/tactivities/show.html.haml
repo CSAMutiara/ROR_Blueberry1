@@ -1,9 +1,11 @@
 #teaching_activity
-    %p= @tactivity.name
-    %p= @tactivity.date
+    %h1= @tactivity.name
+    %h3= @tactivity.date
     %p= @tactivity.ta1
     %p= @tactivity.ta2
     %p= @tactivity.ta3
     %p= @tactivity.ta4
     
-%p= link_to "Teaching Activites", root_path
+= link_to "Back", root_path
+= link_to "Edit", edit_tactivity_path(@tactivity)
+= link_to "Delete", tactivity_path(@tactivity), method: :delete, data: {confirm: "Are you sure?"}

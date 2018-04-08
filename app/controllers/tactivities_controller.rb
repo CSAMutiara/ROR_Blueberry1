@@ -25,9 +25,16 @@ class TactivitiesController < ApplicationController
     end
     
     def update
+        if @tactivity.update(tactivity_params)
+            redirect_to @tactivity
+        else 
+            render 'edit'
+        end 
     end 
     
     def destroy
+        @tactivity.destroy
+        redirect_to root_path
     end 
     
     private
